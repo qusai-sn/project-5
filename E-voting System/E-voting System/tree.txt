@@ -1,0 +1,386 @@
+Folder PATH listing
+Volume serial number is ACD3-5013
+C:.
+|   E-voting System.csproj
+|   E-voting System.csproj.user
+|   favicon.ico
+|   Global.asax
+|   Global.asax.cs
+|   packages.config
+|   tree.txt
+|   Web.config
+|   Web.Debug.config
+|   Web.Release.config
+|   
++---App_Data
++---App_Start
+|       BundleConfig.cs
+|       FilterConfig.cs
+|       RouteConfig.cs
+|       
++---assets
++---bin
+|   |   Antlr3.Runtime.dll
+|   |   Antlr3.Runtime.pdb
+|   |   E-voting System.dll
+|   |   E-voting System.dll.config
+|   |   E-voting System.pdb
+|   |   EntityFramework.dll
+|   |   EntityFramework.SqlServer.dll
+|   |   EntityFramework.SqlServer.xml
+|   |   EntityFramework.xml
+|   |   Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+|   |   Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+|   |   Microsoft.Web.Infrastructure.dll
+|   |   Newtonsoft.Json.dll
+|   |   Newtonsoft.Json.xml
+|   |   System.Web.Helpers.dll
+|   |   System.Web.Helpers.xml
+|   |   System.Web.Mvc.dll
+|   |   System.Web.Mvc.xml
+|   |   System.Web.Optimization.dll
+|   |   System.Web.Optimization.xml
+|   |   System.Web.Razor.dll
+|   |   System.Web.Razor.xml
+|   |   System.Web.WebPages.Deployment.dll
+|   |   System.Web.WebPages.Deployment.xml
+|   |   System.Web.WebPages.dll
+|   |   System.Web.WebPages.Razor.dll
+|   |   System.Web.WebPages.Razor.xml
+|   |   System.Web.WebPages.xml
+|   |   WebGrease.dll
+|   |   
+|   \---roslyn
+|           csc.exe
+|           csc.exe.config
+|           csc.rsp
+|           csi.exe
+|           csi.exe.config
+|           csi.rsp
+|           Microsoft.Build.Tasks.CodeAnalysis.dll
+|           Microsoft.CodeAnalysis.CSharp.dll
+|           Microsoft.CodeAnalysis.CSharp.Scripting.dll
+|           Microsoft.CodeAnalysis.dll
+|           Microsoft.CodeAnalysis.Scripting.dll
+|           Microsoft.CodeAnalysis.VisualBasic.dll
+|           Microsoft.CSharp.Core.targets
+|           Microsoft.DiaSymReader.Native.amd64.dll
+|           Microsoft.DiaSymReader.Native.x86.dll
+|           Microsoft.Managed.Core.targets
+|           Microsoft.VisualBasic.Core.targets
+|           Microsoft.Win32.Primitives.dll
+|           System.AppContext.dll
+|           System.Collections.Immutable.dll
+|           System.Console.dll
+|           System.Diagnostics.DiagnosticSource.dll
+|           System.Diagnostics.FileVersionInfo.dll
+|           System.Diagnostics.StackTrace.dll
+|           System.Globalization.Calendars.dll
+|           System.IO.Compression.dll
+|           System.IO.Compression.ZipFile.dll
+|           System.IO.FileSystem.dll
+|           System.IO.FileSystem.Primitives.dll
+|           System.Net.Http.dll
+|           System.Net.Sockets.dll
+|           System.Reflection.Metadata.dll
+|           System.Runtime.InteropServices.RuntimeInformation.dll
+|           System.Security.Cryptography.Algorithms.dll
+|           System.Security.Cryptography.Encoding.dll
+|           System.Security.Cryptography.Primitives.dll
+|           System.Security.Cryptography.X509Certificates.dll
+|           System.Text.Encoding.CodePages.dll
+|           System.Threading.Tasks.Extensions.dll
+|           System.ValueTuple.dll
+|           System.Xml.ReaderWriter.dll
+|           System.Xml.XmlDocument.dll
+|           System.Xml.XPath.dll
+|           System.Xml.XPath.XDocument.dll
+|           vbc.exe
+|           vbc.exe.config
+|           vbc.rsp
+|           VBCSCompiler.exe
+|           VBCSCompiler.exe.config
+|           
++---Content
+|   |   bootstrap-grid.css
+|   |   bootstrap-grid.css.map
+|   |   bootstrap-grid.min.css
+|   |   bootstrap-grid.min.css.map
+|   |   bootstrap-grid.rtl.css
+|   |   bootstrap-grid.rtl.css.map
+|   |   bootstrap-grid.rtl.min.css
+|   |   bootstrap-grid.rtl.min.css.map
+|   |   bootstrap-reboot.css
+|   |   bootstrap-reboot.css.map
+|   |   bootstrap-reboot.min.css
+|   |   bootstrap-reboot.min.css.map
+|   |   bootstrap-reboot.rtl.css
+|   |   bootstrap-reboot.rtl.css.map
+|   |   bootstrap-reboot.rtl.min.css
+|   |   bootstrap-reboot.rtl.min.css.map
+|   |   bootstrap-utilities.css
+|   |   bootstrap-utilities.css.map
+|   |   bootstrap-utilities.min.css
+|   |   bootstrap-utilities.min.css.map
+|   |   bootstrap-utilities.rtl.css
+|   |   bootstrap-utilities.rtl.css.map
+|   |   bootstrap-utilities.rtl.min.css
+|   |   bootstrap-utilities.rtl.min.css.map
+|   |   bootstrap.css
+|   |   bootstrap.css.map
+|   |   bootstrap.min.css
+|   |   bootstrap.min.css.map
+|   |   bootstrap.rtl.css
+|   |   bootstrap.rtl.css.map
+|   |   bootstrap.rtl.min.css
+|   |   bootstrap.rtl.min.css.map
+|   |   Site.css
+|   |   
+|   \---assets
+|       +---css
+|       |   |   animate.css
+|       |   |   leaflet-routing-machine.css
+|       |   |   leaflet.css
+|       |   |   leaflet.routing.icons.png
+|       |   |   magnific-popup.css
+|       |   |   routing-icon.png
+|       |   |   style.css
+|       |   |   swiper-bundle.min.css
+|       |   |   
+|       |   \---images
+|       |           layers-2x.html
+|       |           layers.html
+|       |           LogoBalck.png
+|       |           marker-icon.png
+|       |           
+|       +---images
+|       |   |   about-image-1.jpg
+|       |   |   about-image-2.jpg
+|       |   |   about-image-3.jpg
+|       |   |   banner-1.jpg
+|       |   |   campaign-1.jpg
+|       |   |   campaign-3.jpg
+|       |   |   campaign-5.jpg
+|       |   |   campaign-6.jpg
+|       |   |   campaign-7.jpg
+|       |   |   contact-image-2.jpg
+|       |   |   event-2.jpg
+|       |   |   event-3.jpg
+|       |   |   gallery-1.jpg
+|       |   |   gallery-2.jpg
+|       |   |   gallery-3.jpg
+|       |   |   gallery-4.jpg
+|       |   |   heading-separator.png
+|       |   |   hero-bg-1.jpg
+|       |   |   hero-bg-2.jpg
+|       |   |   hero-bg-3.jpg
+|       |   |   hero-image-2.png
+|       |   |   hero-image-3.png
+|       |   |   logo-dark.png
+|       |   |   LogoBalck.png
+|       |   |   LogoBlack.png
+|       |   |   LogoWhite-removebg-preview (1).png
+|       |   |   LogoWhite.png
+|       |   |   map-tile-2.html
+|       |   |   map-tile.html
+|       |   |   mosque-image-1.png
+|       |   |   mosque-image-2.png
+|       |   |   placeholder.svg
+|       |   |   portfolio-1.jpg
+|       |   |   portfolio-2.jpg
+|       |   |   portfolio-4.jpg
+|       |   |   portfolio-5.jpg
+|       |   |   portfolio-6.jpg
+|       |   |   portfolio-7.jpg
+|       |   |   portfolio-8.jpg
+|       |   |   portfolio-9.jpg
+|       |   |   sign-dark.png
+|       |   |   sign-light.png
+|       |   |   testimonial-1.jpg
+|       |   |   testimonial-author-image-1.jpg
+|       |   |   testimonial-author-image-2.jpg
+|       |   |   video-image.jpg
+|       |   |   volunteer-image-2.png
+|       |   |   volunteer-image.jpg
+|       |   |   volunterr-bg.jpg
+|       |   |   
+|       |   +---fav-icon
+|       |   |       favicon.ico
+|       |   |       
+|       |   \---landing-page
+|       |           hero-landing.png
+|       |           responsive-image.png
+|       |           support-image.png
+|       |           
+|       +---js
+|       |       animate.js
+|       |       bootstrap.bundle.min.js
+|       |       countdown.js
+|       |       isotope.js
+|       |       jquery-3.7.0.min.js
+|       |       jquery.magnific-popup.min.js
+|       |       jquery.progressScroll.min.js
+|       |       lazy.image.js
+|       |       leaflet-routing-machine.min.js
+|       |       leaflet-scripts.js
+|       |       leaflet.js
+|       |       script.js
+|       |       swiper-bundle.min.js
+|       |       wow.min.js
+|       |       
+|       \---videos
+|               video.mp4
+|               
++---Controllers
+|       AdminPostsController.cs
+|       AdsController.cs
+|       ContactFormsController.cs
+|       DebatesController.cs
+|       HomeController.cs
+|       ResultController.cs
+|       userController.cs
+|       
++---Models
+|       Admin.cs
+|       Advertisement.cs
+|       CirclesViewModel.cs
+|       ContactForm.cs
+|       Date.cs
+|       Debate.cs
+|       Election.Context.cs
+|       Election.Context.tt
+|       Election.cs
+|       Election.Designer.cs
+|       Election.edmx
+|       Election.edmx.diagram
+|       Election.tt
+|       ElectionAdvertisement.cs
+|       ElectionPost.cs
+|       localCandidate.cs
+|       localList.cs
+|       LocalListViewModel.cs
+|       local_Candidates_Request.cs
+|       PartyCandidate.cs
+|       PartyList.cs
+|       PartyListViewModel.cs
+|       PayPalPayment.cs
+|       ResultViewModel.cs
+|       sysdiagram.cs
+|       USER.cs
+|       
++---obj
+|   \---Debug
+|       |   .NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+|       |   DesignTimeResolveAssemblyReferences.cache
+|       |   DesignTimeResolveAssemblyReferencesInput.cache
+|       |   E-voting System.csproj.AssemblyReference.cache
+|       |   E-voting System.csproj.CoreCompileInputs.cache
+|       |   E-voting System.csproj.FileListAbsolute.txt
+|       |   E-voting System.dll
+|       |   E-voting System.pdb
+|       |   E-voting.29A29C03.Up2Date
+|       |   
+|       +---edmxResourcesToEmbed
+|       |   \---Models
+|       |           Election.csdl
+|       |           Election.msl
+|       |           Election.ssdl
+|       |           Elections.csdl
+|       |           Elections.msl
+|       |           Elections.ssdl
+|       |           
+|       \---TempPE
+|               Models.Election.Context.cs.dll
+|               Models.Election.cs.dll
+|               Models.Election.Designer.cs.dll
+|               Models.Elections.Context.cs.dll
+|               Models.Elections.cs.dll
+|               Models.Elections.Designer.cs.dll
+|               
++---Properties
+|       AssemblyInfo.cs
+|       
++---Scripts
+|       bootstrap.bundle.js
+|       bootstrap.bundle.js.map
+|       bootstrap.bundle.min.js
+|       bootstrap.bundle.min.js.map
+|       bootstrap.esm.js
+|       bootstrap.esm.js.map
+|       bootstrap.esm.min.js
+|       bootstrap.esm.min.js.map
+|       bootstrap.js
+|       bootstrap.js.map
+|       bootstrap.min.js
+|       bootstrap.min.js.map
+|       jquery-3.7.0.intellisense.js
+|       jquery-3.7.0.js
+|       jquery-3.7.0.min.js
+|       jquery-3.7.0.min.map
+|       jquery-3.7.0.slim.js
+|       jquery-3.7.0.slim.min.js
+|       jquery-3.7.0.slim.min.map
+|       jquery.validate-vsdoc.js
+|       jquery.validate.js
+|       jquery.validate.min.js
+|       jquery.validate.unobtrusive.js
+|       jquery.validate.unobtrusive.min.js
+|       modernizr-2.8.3.js
+|       
+\---Views
+    |   Web.config
+    |   _ViewStart.cshtml
+    |   
+    +---AdminPosts
+    |       Create.cshtml
+    |       Delete.cshtml
+    |       Index.cshtml
+    |       _EditPartial.cshtml
+    |       
+    +---Ads
+    |       AdminAds.cshtml
+    |       Ads.cshtml
+    |       Index.cshtml
+    |       Payment.cshtml
+    |       Plans.cshtml
+    |       
+    +---ContactForms
+    |       ContactForm.cshtml
+    |       ContactSubmissions.cshtml
+    |       Reply.cshtml
+    |       SendReply.cshtml
+    |       
+    +---Debates
+    |       Admin.cshtml
+    |       Create.cshtml
+    |       Delete.cshtml
+    |       Details.cshtml
+    |       Edit.cshtml
+    |       Index.cshtml
+    |       Index1.cshtml
+    |       IndexDebatsesHome.cshtml
+    |       
+    +---Home
+    |       About.cshtml
+    |       Contact.cshtml
+    |       Index.cshtml
+    |       
+    +---Result
+    |       CalculateVotesForEachParty.cshtml
+    |       LocalResult.cshtml
+    |       
+    +---Shared
+    |       Error.cshtml
+    |       _Layout.cshtml
+    |       _LayoutAdmin.cshtml
+    |       
+    \---user
+            circles.cshtml
+            EnterCode.cshtml
+            LocalList.cshtml
+            Login.cshtml
+            LoginWithPassword.cshtml
+            PartyList.cshtml
+            ResetPassword.cshtml
+            TypeOfElection.cshtml
+            

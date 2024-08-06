@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Send Email";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Send Email</h2>
+
+@if (ViewBag.Error != null)
+{
+    <h2>@ViewBag.Error</h2>
+}
+
+<form method="post" action="@Url.Action("SendReply", "ContactForms")">
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" name="ID" value="@ViewBag.ID" />
+
+    <div class="container">
+        <span class="form-control-static">عنوان البريد </span>
+        <input class="form-control" type="text" name="subject" required />
+        <br />
+        <span class="form-control-static">المحتوى </span>
+        <textarea class="form-control" name="message" rows="4" required></textarea>
+        <br />
+        <input class="btn btn-primary" type="submit" value="إرسال" />
+    </div>
+</form>

@@ -1,0 +1,50 @@
+﻿@model E_voting_System.Models.CirclesViewModel
+
+@{
+    ViewBag.Title = "Circles";
+}
+
+<h2>Circles</h2>
+
+<div class="container">
+    <div class="row">
+        @foreach (var circle in Model.Circles)
+        {
+            var isActive = circle == Model.ActiveCircleId;
+            <div class="col-md-4 mb-4">
+                <div class="card @(isActive ? "active-circle" : "inactive-circle")">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Circle @circle</h5>
+                        @if (isActive)
+                        {
+                            <a href="@Url.Action("LocalList", "user", new { circleId = circle })" class="btn btn-primary">Go to Local List</a>
+                        }
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<style>
+    .card {
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .active-circle {
+        border: 2px solid green;
+    }
+
+    .inactive-circle {
+        border: 2px solid gray;
+    }
+</style>

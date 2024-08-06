@@ -1,0 +1,123 @@
+﻿@model E_voting_System.Models.LocalListViewModel
+
+@{
+    ViewBag.Title = "Local List";
+}
+
+<h2>Local List</h2>
+
+@using (Html.BeginForm("LocalList", "user", FormMethod.Post, new { id = "localListForm" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="container">
+        <div class="row">
+            @foreach (var list in Model.LocalLists)
+            {
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">@list.list_Name</h5>
+                            <img src="@list.List_Logo" alt="@list.list_Name Logo" class="img-fluid" />
+                            <p class="card-text">Total Votes: @list.Counter</p>
+                            <div class="form-check">
+                                <input class="form-check-input list-radio" type="radio" name="SelectedListId" id="list_@list.ID" value="@list.ID" />
+                                <label class="form-check-label" for="list_@list.ID">
+                                    Select
+                                </label>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <h6>Candidates</h6>
+                            <ul class="list-group list-group-flush">
+                                @foreach (var candidate in Model.CandidatesByList[list.ID])
+                                {
+                                    <li class="list-group-item">
+                                        <div class="form-check">
+                                            <input class="form-check-input candidate-checkbox" type="checkbox" name="SelectedCandidateIds" id="candidate_@candidate.ID" value="@candidate.ID" data-list-id="@list.ID" disabled />
+                                            <label class="form-check-label" for="candidate_@candidate.ID">
+                                                @candidate.Candidate_Name (@candidate.Type_of_Chair)
+                                            </label>
+                                            <span class="badge bg-primary rounded-pill">@candidate.Counter</span>
+                                        </div>
+                                    </li>
+                                }
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+        <div class="form-group mt-4">
+            <input type="button" id="submitVote" value="Submit Vote" class="btn btn-primary" />
+        </div>
+    </div>
+}
+
+<style>
+    .card {
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+    .card-body {
+        text-align: center;
+    }
+
+    .form-check-input {
+        margin-top: 0.3em;
+    }
+
+    .list-group-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+</style>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        var listRadios = document.querySelectorAll('.list-radio');
+        var candidateCheckboxes = document.querySelectorAll('.candidate-checkbox');
+
+        listRadios.forEach(function (radio) {
+            radio.addEventListener('change', function () {
+                var selectedListId = this.value;
+
+                candidateCheckboxes.forEach(function (checkbox) {
+                    if (checkbox.getAttribute('data-list-id') === selectedListId) {
+                        checkbox.disabled = false;
+                    } else {
+                        checkbox.disabled = true;
+                        checkbox.checked = false; // Uncheck the checkbox if it's disabled
+                    }
+                });
+            });
+        });
+
+        document.getElementById('submitVote').addEventListener('click', function () {
+            var selectedList = document.querySelector('input[name="SelectedListId"]:checked');
+            if (!selectedList) {
+                Swal.fire({
+                    title: 'Confirm White Vote',
+                    text: "You are about to submit a white vote. Do you want to proceed?",
+                    icon: 'warning',
+                    showCancelButton: true,
+                    confirmButtonText: 'Yes, submit',
+                    cancelButtonText: 'No, cancel'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                        document.getElementById('localListForm').submit();
+                    }
+                });
+            } else {
+                document.getElementById('localListForm').submit();
+            }
+        });
+    });
+</script>
