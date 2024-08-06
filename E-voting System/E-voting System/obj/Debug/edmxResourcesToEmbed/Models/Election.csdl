@@ -20,16 +20,6 @@
     <Property Name="Message" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
   </EntityType>
-  <EntityType Name="Date">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Start_Date_Of_Nominate" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="End_Date_Of_Nominate" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="Start_Date_Of_Election" Type="DateTime" Nullable="false" Precision="0" />
-    <Property Name="End_Date_Of_Election" Type="DateTime" Nullable="false" Precision="0" />
-  </EntityType>
   <EntityType Name="Debate">
     <Key>
       <PropertyRef Name="ID" />
@@ -81,12 +71,18 @@
   <EntityType Name="localCandidate">
     <Key>
       <PropertyRef Name="ID" />
+      <PropertyRef Name="CandidateId" />
     </Key>
     <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="Candidate_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Candidate_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
     <Property Name="Type_of_Chair" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="List_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="Counter" Type="Int32" Nullable="false" />
+    <Property Name="List_Name" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Counter" Type="Int32" />
+    <Property Name="CandidateId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="National_ID" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+    <Property Name="Type_Of_Chair" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Picture" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="List_ID" Type="Int32" />
   </EntityType>
   <EntityType Name="localList">
     <Key>
@@ -98,6 +94,13 @@
     <Property Name="Counter" Type="Int32" Nullable="false" />
     <Property Name="List_Logo" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
     <Property Name="ActualSeats" Type="Int32" />
+    <Property Name="list_Candidates" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="Delegate_ID" Type="Int32" />
+    <Property Name="Delegate_Name" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delegate_Phone" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Delegate_Email" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="Status" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Name="reason" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="PartyCandidate">
     <Key>
@@ -221,7 +224,6 @@
   <EntityContainer Name="ElectionEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Admins" EntityType="Self.Admin" />
     <EntitySet Name="ContactForms" EntityType="Self.ContactForm" />
-    <EntitySet Name="Dates" EntityType="Self.Date" />
     <EntitySet Name="Debates" EntityType="Self.Debate" />
     <EntitySet Name="ElectionAdvertisements" EntityType="Self.ElectionAdvertisement" />
     <EntitySet Name="ElectionPosts" EntityType="Self.ElectionPost" />

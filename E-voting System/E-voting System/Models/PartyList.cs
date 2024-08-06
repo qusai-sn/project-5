@@ -21,7 +21,7 @@ namespace E_voting_System.Models
         public string Delegate_Name { get; set; }
         public string Delegate_Phone { get; set; }
         public string Delegate_Email { get; set; }
-        public  int Counter { get; set; }
+        public int Counter { get; set; }
         public string Status { get; set; }
         public string reason { get; set; }
         public string List_Logo { get; set; }

@@ -76,9 +76,12 @@
     <EntitySetMapping Name="localCandidates">
       <EntityTypeMapping TypeName="ElectionModel.localCandidate">
         <MappingFragment StoreEntitySet="localCandidate">
-          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="List_ID" ColumnName="List_ID" />
+          <ScalarProperty Name="Picture" ColumnName="Picture" />
+          <ScalarProperty Name="Type_Of_Chair" ColumnName="Type_Of_Chair" />
+          <ScalarProperty Name="National_ID" ColumnName="National_ID" />
+          <ScalarProperty Name="CandidateId" ColumnName="CandidateId" />
           <ScalarProperty Name="Candidate_Name" ColumnName="Candidate_Name" />
-          <ScalarProperty Name="Type_of_Chair" ColumnName="Type_of_Chair" />
           <ScalarProperty Name="List_Name" ColumnName="List_Name" />
           <ScalarProperty Name="Counter" ColumnName="Counter" />
         </MappingFragment>
@@ -87,6 +90,13 @@
     <EntitySetMapping Name="localLists">
       <EntityTypeMapping TypeName="ElectionModel.localList">
         <MappingFragment StoreEntitySet="localList">
+          <ScalarProperty Name="reason" ColumnName="reason" />
+          <ScalarProperty Name="Status" ColumnName="Status" />
+          <ScalarProperty Name="Delegate_Email" ColumnName="Delegate_Email" />
+          <ScalarProperty Name="Delegate_Phone" ColumnName="Delegate_Phone" />
+          <ScalarProperty Name="Delegate_Name" ColumnName="Delegate_Name" />
+          <ScalarProperty Name="Delegate_ID" ColumnName="Delegate_ID" />
+          <ScalarProperty Name="list_Candidates" ColumnName="list_Candidates" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="list_Name" ColumnName="list_Name" />
           <ScalarProperty Name="Circle_ID" ColumnName="Circle_ID" />

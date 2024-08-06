@@ -27,7 +27,6 @@ namespace E_voting_System.Models
     
         public virtual DbSet<Admin> Admins { get; set; }
         public virtual DbSet<ContactForm> ContactForms { get; set; }
-        public virtual DbSet<Date> Dates { get; set; }
         public virtual DbSet<Debate> Debates { get; set; }
         public virtual DbSet<ElectionAdvertisement> ElectionAdvertisements { get; set; }
         public virtual DbSet<ElectionPost> ElectionPosts { get; set; }

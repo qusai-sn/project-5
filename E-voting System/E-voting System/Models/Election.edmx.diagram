@@ -4,15 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="64cb66c586f9485381ce4365c4aadcee" Name="Diagram1" ZoomLevel="60">
+      <Diagram DiagramId="64cb66c586f9485381ce4365c4aadcee" Name="Diagram1" ZoomLevel="55">
         <EntityTypeShape EntityType="ElectionModel.Admin" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.ContactForm" Width="1.5" PointX="5.75" PointY="3.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ElectionModel.Date" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.Debate" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.ElectionAdvertisement" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.ElectionPost" Width="1.5" PointX="4.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.localCandidate" Width="1.5" PointX="6.75" PointY="6.75" IsExpanded="true" />
-        <EntityTypeShape EntityType="ElectionModel.localList" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ElectionModel.localList" Width="1.5" PointX="13" PointY="0.625" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.PartyCandidate" Width="1.5" PointX="8.75" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.PartyList" Width="1.5" PointX="8.75" PointY="7.75" IsExpanded="true" />
         <EntityTypeShape EntityType="ElectionModel.PayPalPayment" Width="1.5" PointX="0.75" PointY="2" IsExpanded="true" />

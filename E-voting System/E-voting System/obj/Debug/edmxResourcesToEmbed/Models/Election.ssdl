@@ -129,13 +129,16 @@ warning 6002: The table/view 'Election.dbo.local_Candidates_Request' does not ha
   </EntityType>
   <EntityType Name="localCandidate">
     <Key>
-      <PropertyRef Name="ID" />
+      <PropertyRef Name="CandidateId" />
     </Key>
-    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="Candidate_Name" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="Type_of_Chair" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="List_Name" Type="varchar" MaxLength="255" Nullable="false" />
-    <Property Name="Counter" Type="int" Nullable="false" />
+    <Property Name="CandidateId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="National_ID" Type="char" MaxLength="10" />
+    <Property Name="Candidate_Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Type_Of_Chair" Type="nvarchar" MaxLength="50" />
+    <Property Name="List_Name" Type="nvarchar" MaxLength="100" />
+    <Property Name="Counter" Type="int" />
+    <Property Name="Picture" Type="nvarchar" MaxLength="255" />
+    <Property Name="List_ID" Type="int" />
   </EntityType>
   <EntityType Name="localList">
     <Key>
@@ -147,6 +150,13 @@ warning 6002: The table/view 'Election.dbo.local_Candidates_Request' does not ha
     <Property Name="Counter" Type="int" Nullable="false" />
     <Property Name="List_Logo" Type="varchar" MaxLength="255" />
     <Property Name="ActualSeats" Type="int" />
+    <Property Name="list_Candidates" Type="varchar(max)" />
+    <Property Name="Delegate_ID" Type="int" />
+    <Property Name="Delegate_Name" Type="varchar" MaxLength="255" />
+    <Property Name="Delegate_Phone" Type="varchar" MaxLength="255" />
+    <Property Name="Delegate_Email" Type="varchar" MaxLength="255" />
+    <Property Name="Status" Type="varchar" MaxLength="255" />
+    <Property Name="reason" Type="varchar(max)" />
   </EntityType>
   <EntityType Name="PartyCandidates">
     <Key>

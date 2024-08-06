@@ -18,6 +18,11 @@ namespace E_voting_System.Models
         public string Candidate_Name { get; set; }
         public string Type_of_Chair { get; set; }
         public string List_Name { get; set; }
-        public int Counter { get; set; }
+        public Nullable<int> Counter { get; set; }
+        public int CandidateId { get; set; }
+        public string National_ID { get; set; }
+        public string Type_Of_Chair { get; set; }
+        public string Picture { get; set; }
+        public Nullable<int> List_ID { get; set; }
     }
 }

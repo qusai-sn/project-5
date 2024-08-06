@@ -20,5 +20,12 @@ namespace E_voting_System.Models
         public int Counter { get; set; }
         public string List_Logo { get; set; }
         public Nullable<int> ActualSeats { get; set; }
+        public string list_Candidates { get; set; }
+        public Nullable<int> Delegate_ID { get; set; }
+        public string Delegate_Name { get; set; }
+        public string Delegate_Phone { get; set; }
+        public string Delegate_Email { get; set; }
+        public string Status { get; set; }
+        public string reason { get; set; }
     }
 }
